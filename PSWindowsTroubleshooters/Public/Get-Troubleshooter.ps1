@@ -35,16 +35,12 @@ Function Get-Troubleshooter {
         Get-Troubleshooter is a function that returns a list of troubleshooters that are available on the local machine.
     .PARAMETER Name
         The name of the troubleshooter to return.
-    .PARAMETER Category
-        The category of troubleshooters to return.
-    .PARAMETER Include
-        The troubleshooters to include in the results.
-    .PARAMETER Exclude
-        The troubleshooters to exclude from the results.
     .PARAMETER All
         Return all troubleshooters.
     .EXAMPLE
         Get-Troubleshooter
+
+        Returns all troubleshooters.
     #>
     [CmdletBinding()]
     Param (
