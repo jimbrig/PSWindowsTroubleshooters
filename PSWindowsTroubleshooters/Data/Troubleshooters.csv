@@ -1,0 +1,23 @@
+﻿ID,Command,Description,Dependencies
+"""NetworkDiagnosticsDA""","""$env:SystemRoot\system32\msdt.exe -id NetworkDiagnosticsDA""","""Troubleshoots problems connecting to a workplace network over the Internet using Direct Access.""","""Direct Access Installed"""
+"""DeviceDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id DeviceDiagnostic""","""Troubleshoots problems using hardware and access devices connected to the computer.""",
+"""HomeGroupDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id HomeGroupDiagnostic""","""Troubleshoots problems viewing computers or shared files in a homegroup.""","""HomeGroup installed"""
+"""NetworkDiagnosticsInbound""","""$env:SystemRoot\system32\msdt.exe -id NetworkDiagnosticsInbound""","""Troubleshoots problems with allowing other computers to communicate with the target computer through Windows Firewall.""",
+"""NetworkDiagnosticsWeb""","""$env:SystemRoot\system32\msdt.exe -id NetworkDiagnosticsWeb""","""Troubleshoots problems connecting to the Internet or to a specific Web site.""",
+"""IEDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id IEDiagnostic""","""Helps the user prevent add-on problems and optimize temporary files and connections.""","""Internet Explorer installed"""
+"""IESecurityDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id IESecurityDiagnostic""","""Helps the user prevent malware, pop-ups, and online attacks.""","""Internet Explorer installed"""
+"""NetworkDiagnosticsNetworkAdapter""","""$env:SystemRoot\system32\msdt.exe -id NetworkDiagnosticsNetworkAdapter""","""Troubleshoots problems with Ethernet, wireless, or other network adapters.""",
+"""PerformanceDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id PerformanceDiagnostic""","""Helps the user adjust settings to improve operating system speed and performance.""",
+"""AudioPlaybackDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id AudioPlaybackDiagnostic""","""Troubleshoots problems playing sounds and other audio files.""","""Audio output device installed"""
+"""PowerDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id PowerDiagnostic""","""Helps the user adjust power settings to improve battery life and reduce power consumption.""",
+"""PrinterDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id PrinterDiagnostic""","""Troubleshoots problems printing.""",
+"""PCWDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id PCWDiagnostic""","""Helps the user configure older programs so that they can run in the current version of Windows.""",
+"""AudioRecordingDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id AudioRecordingDiagnostic""","""Troubleshoots problems recording audio from a microphone or other input source.""","""Audio input device installed"""
+"""SearchDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id SearchDiagnostic""","""Troubleshoots problems with search and indexing using Windows Search.""","""Search enabled"""
+"""NetworkDiagnosticsFileShare""","""$env:SystemRoot\system32\msdt.exe -id NetworkDiagnosticsFileShare""","""Troubleshoots problems accessing shared files and folders on other computers over the network.""",
+"""MaintenanceDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id MaintenanceDiagnostic""","""Helps the user clean up unused files and shortcuts and perform other maintenance tasks.""",
+"""WindowsMediaPlayerDVDDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id WindowsMediaPlayerDVDDiagnostic""","""Troubleshoots problems playing a DVD using Windows Media Player.""","""Windows Media Player installed"""
+"""WindowsMediaPlayerLibraryDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id WindowsMediaPlayerLibraryDiagnostic""","""Troubleshoots problems with adding media files to the Windows Media Player library.""","""Windows Media Player installed"""
+"""WindowsMediaPlayerConfigurationDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id WindowsMediaPlayerConfigurationDiagnostic""","""Helps the user reset Windows Media Player settings to the default configuration.""","""Windows Media Player installed"""
+"""AeroDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id AeroDiagnostic""","""Troubleshoots problems displaying Aero effects like transparency.""","""Aero Display Theme Installed"""
+"""WindowsUpdateDiagnostic""","""$env:SystemRoot\system32\msdt.exe -id WindowsUpdateDiagnostic""","""Troubleshoots problems that prevent Windows Update from performing update tasks.""",
