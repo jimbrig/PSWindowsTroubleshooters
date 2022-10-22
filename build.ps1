@@ -29,6 +29,8 @@ param(
     [parameter(ParameterSetName = 'Help')]
     [switch]$Help,
 
+    [pscredential]$PSGalleryApiKey,
+
     # Optional properties to pass to psake
     [hashtable]$Properties,
 
@@ -56,10 +58,14 @@ if ($Bootstrap.IsPresent) {
 # Execute psake task(s)
 $psakeFile = './psakeFile.ps1'
 if ($PSCmdlet.ParameterSetName -eq 'Help') {
-    Get-PSakeScriptTasks -buildFile $psakeFile |
+    Get-PSakeScriptTasks -buildFile $psakeFile  |
         Format-Table -Property Name, Description, Alias, DependsOn
 } else {
     Set-BuildEnvironment -Force
-    Invoke-psake -buildFile $psakeFile -taskList $Task -nologo -properties $Properties -parameters $Parameters
-    exit ([int](-not $psake.build_success))
+    $parameters = @{}
+    if ($PSGalleryApiKey) {
+        $parameters['galleryApiKey'] = $PSGalleryApiKey
+    }
+    Invoke-psake -buildFile $psakeFile -taskList $Task -nologo -parameters $parameters
+    exit ( [int]( -not $psake.build_success ) )
 }
