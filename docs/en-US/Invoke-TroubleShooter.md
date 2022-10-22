@@ -13,7 +13,7 @@ Invoke-TroubleShooter is a function that runs troubleshooters on the local machi
 ## SYNTAX
 
 ```
-Invoke-TroubleShooter [-Name] <String> [-AsAdmin] [<CommonParameters>]
+Invoke-TroubleShooter [-Name] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,21 +41,6 @@ Aliases:
 Required: True
 Position: 1
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AsAdmin
-Run the troubleshooter as an administrator?
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
